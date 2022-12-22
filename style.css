@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(247, 247, 247);
+}
+
+h1{
+    margin-bottom: 30px;
+}
+
+.income-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    overflow-x: hidden;
+}
+
+.income-budget{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.itemsCostTotal{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.budget-card{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    row-gap: 10px;
+}
+
+.budget-card > input{
+    height:30px;
+    padding: 4px;
+}
+
+.budget-card > button{
+    background-color: rgb(252, 62, 62);
+    color: white;
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.emergency-fund{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 360px;
+    background-color: white;
+    row-gap: 10px;
+}
+
+.emergency-fund > input{
+    height:30px;
+    padding: 4px;
+}
+
+.emergency-fund > button{
+    background-color: rgb(252, 62, 62);
+    color: white;
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.add-income-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 328px;
+    background-color: white;
+    row-gap: 10px;
+}
+
+.add-income-card > input{
+    height:30px;
+    padding: 4px;
+}
+
+.add-income-card > button{
+    background-color: rgb(252, 62, 62);
+    color: white;
+    border: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.expenses-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: white;
+    width: 1080px;
+    height: auto;
+    padding: 20px;
+    row-gap: 15px;
+}
+
+.expense-input-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.expense-input-row > input {
+    height:30px;
+    padding: 4px;
+}
+
+.expense-input-row > button{
+    background-color: rgb(252, 62, 62);
+    color: white;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.expenses-list{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 10px;
+}
+
+.expenses-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    /* height: 60px; */
+    background-color: rgb(217, 232, 255);
+    padding: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.expenses-list-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.expenses-list-actions > button{
+    padding: 14px;
+    background-color: rgb(240, 252, 133);
+    color: rgb(83, 81, 76);
+    cursor: pointer;
+}
+
+.totalExpensesAmount{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: antiquewhite;
+    width: 500px;
+    padding: 12px;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.savingsCard{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: stretch;
+    background-color: #ffbc42;
+    padding: 10px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.budgetAmount,.expensesAmount,.savingsAmount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 60px;
+    justify-content: space-between;
+}
+.budgetLabel,.expensesLabel,.savingLabel{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.savingsAmount{
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f7ede2;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.moneySaved{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.budgetAlloted,.money-spent{
+    font-weight: 500;
+}
+

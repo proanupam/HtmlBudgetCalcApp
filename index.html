@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Application</h1>
+        <div class="income-budget">
+            <div class="left-section">
+                <div class="add-income-card">
+                    <div class="income-row">
+                        <h2>INCOME: </h2>
+                        <p class="income-row-p" id="incomeEntered">00</p>
+                    </div>
+                    <input type="number" id="income-input" placeholder="income">
+                    <button id="add-income-button">Add Income</button>
+                </div>
+                <div class="emergency-fund">
+                    <div class="income-row">
+                        <h2>Set Emergency Amount: </h2>
+                        <p class="income-row-p" id="emergencyEntered">00</p>
+                    </div>
+                    <input type="number" id="emergency-input" placeholder="set emergency fund">
+                    <button id="emergency-button">Add Emergency money</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="budget-card">
+                    <div class="income-row">
+                        <h2>Set Budget Amount</h2>
+                        <p class="income-row-p" id="budgetEntered">00</p>
+                    </div>
+                    <input type="number" id="add-budget-input" placeholder="budget">
+                    <button id="set-budget-button">Set Budget</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="expenses-section">
+            <div class="expense-input-row">
+                <input type="text" id="expense-item" placeholder="item">
+                <input type="number" id="expense-cost" placeholder="price">
+                <button id="add-item-Button">Add Item</button>
+            </div>
+
+            <div class="expenses-list">
+                <!-- <div class="expenses-list-item">
+                    <div class="item-name">Item Name</div>
+                    <div class="expenses-list-actions">
+                        Actions
+                    </div>
+                    <div class="itemsCostTotal">
+                        <p>Item(s) Price</p>
+                    </div>
+                </div> -->
+                <div class="expenses-list-item hidden" >
+                    <div class="item-name">xxx</div>
+                    <div class="expenses-list-actions">
+                        <button class="deleteItemBtn" id="" onclick="deleteItemFunc(id)"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                        <button class="increBtn" id="" onclick="incrementItemQuantityFunc(id)"><i class="fa-solid fa-plus"></i></button>
+                        <button class="decreBtn" id="" onclick="decrementItemQuantityFunc(id)"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                    <div class="itemsCostTotal">
+                        <p id="itemQty">0</p>
+                            <span>x</span>
+                        <p id="itemSingle">00</p>
+                            <span>=</span>
+                        <p id="itemTotal">00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="totalExpensesAmount">
+                <p class="totalExpLabel">Total Expenses</p>
+                <p id="totalExpRup">00</p>
+            </div>
+        </div>
+        <div class="savingsCard">
+            <div class="budgetAmount">
+                <p class="budgetLabel">Budget</p>
+                <p class="budgetAlloted">00</p>
+            </div>
+            <div class="expensesAmount">
+                <p class="expensesLabel">Expenses</p>
+                <p class="money-spent">00</p>
+            </div>
+            <div class="savingsAmount">
+                <p class="savingLabel">Saving Amount</p>
+                <p class="moneySaved">00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
